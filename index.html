@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Movie-store</div>
+    
+        
+  </nav>
+  <div class="search">
+    <input type="text" id="searchBar" placeholder="Search for movies...">
+    <button onclick="searchFunction()" class="btn">Search</button>
+  </div>
+
+  <!-- Carousel -->
+  <div class="carousel">
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <div class="carousel-slides">
+      <img src="img1.jpg" alt="Movie 1">
+      <img src="https://via.placeholder.com/800x400?text=Movie+2" alt="Movie 2">
+      <img src="https://via.placeholder.com/800x400?text=Movie+3" alt="Movie 3">
+    </div>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <!-- Movie List with Pagination -->
+  <div id="movieList" class="movie-list"></div>
+  <div class="pagination">
+    <button onclick="changePage(-1)">&#10094; Prev</button>
+    <span id="pageNumber">1</span>
+    <button onclick="changePage(1)">Next &#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
